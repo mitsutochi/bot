@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const chalk = require("chalk")
-const bot = new Discord.Client({autoReconnect:true}	);
+const bot = new Discord.Client();
 
 const prefix = "^" ;
 process.on('unhandledRejection', (reason) => {
