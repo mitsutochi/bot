@@ -3,12 +3,6 @@ const chalk = require("chalk")
 const bot = new Discord.Client();
 
 const prefix = "^" ;
-process.on('unhandledRejection', (reason) => {
-
-  console.log(reason.message)
-  //return;
-
-});
 
 bot.on("ready", () => {
 		console.log(chalk.red(`${bot.user.tag} prêt pour le carnage`))
