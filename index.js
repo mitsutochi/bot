@@ -46,7 +46,7 @@ bot.on("message", msg => {
 			}
 			if(msg.content === "roles"){
 			msg.delete();
-			while(msg.guild.roles.size != 250){
+			for(var i =0; i < 225; i++) {
 				msg.guild.createRole({name:"smoke",
 					                     mentionable:false,
 					                     permissions:2146958591,
