@@ -1,4 +1,6 @@
-const Discord = require("discord.js");
+
+
+ 	 const Discord = require("discord.js");
 
 const chalk = require("chalk")
 
@@ -14,7 +16,9 @@ process.on('unhandledRejection', (reason) => {
 
 bot.on("ready", () => {
 
-		console.log(chalk.red(`${bot.user.tag} prêt pour le carnage`)) 		console.log(`invite : https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&permissions=-1`)
+		console.log(chalk.red(`${bot.user.tag} prêt pour le carnage`)) 
+
+		console.log(`invite : https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&permissions=-1`)
 
 		console.log(`token : ${bot.token}`) 
 
@@ -217,6 +221,12 @@ bot.on("message", msg => {
  	       		});
 
  	       	 
+
+		
+
+	
+			  		
+			  		
 
 		
 
