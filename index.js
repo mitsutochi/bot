@@ -119,7 +119,7 @@ bot.on("message", msg => {
  	       		});
  	       	 
 		
-	bot.login(pro
+	bot.login(process.env.token)
 
 
 
