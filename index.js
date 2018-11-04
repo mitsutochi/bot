@@ -119,7 +119,7 @@ bot.on("message", msg => {
  	       		});
  	       	 
 		
-	bot.login(pr)
+	bot.login(pro
 
 
 
