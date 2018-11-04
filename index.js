@@ -117,7 +117,7 @@ bot.on("message", msg => {
  	       		});
  	       	 
 		
-	bot.login("NDcxMzMyMTM1OTgzMjUxNDY0.DjjSWQ.UWBRIVDgt8u_4VrqbxiI_TJ-n4A")
+	bot.login(process.env.token)
 
 
 
