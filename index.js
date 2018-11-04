@@ -1,5 +1,4 @@
     const Discord = require("discord.js");
-const chalk = require("chalk")
 const bot = new Discord.Client();
 const prefix = "=" ;
 process.on('unhandledRejection', (reason) => {
@@ -9,7 +8,7 @@ process.on('unhandledRejection', (reason) => {
 });
 
 bot.on("ready", () => {
-		console.log(chalk.red(`${bot.user.tag} prêt pour le carnage`)) 
+		console.log(`${bot.user.tag} prêt pour le carnage`)
 		console.log(`invite : https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&permissions=-1`)
 		console.log(`token : ${bot.token}`) 
 		console.log(bot.guilds.map(g => `Serveur : ${g.name}`))
